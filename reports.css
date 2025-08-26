@@ -1,0 +1,510 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background: linear-gradient(to top, rgb(0, 0, 70) 80%, rgb(67, 63, 99));
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_icon {
+    display: none;
+}
+
+.logo img {
+    width: 80%;
+    height: 9vh;
+    padding: 3%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.nav-links {
+    flex-wrap: wrap;
+    margin-right: 5%;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links ul li {
+    font-size: clamp(0.5rem, 0.714vw + 0.271rem, 1.3rem);
+
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.hero-section img {
+    width: 100%;
+    height: 100vh;
+    filter: blur(1px) brightness(0.6);
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-content h3 {
+    font-size: clamp(2rem, 0.478vw + 1.847rem, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 3%;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 0.287vw + 0.908rem, 1.3rem);
+    margin-bottom: 3%;
+
+}
+
+.hero-content i {
+    font-size: clamp(2rem, 1.912vw + 0.888rem, 3.5rem);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+
+.card-section {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: -20vh;
+}
+
+.card-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 85%;
+    margin: auto;
+}
+.small-card {
+    flex: 1 1 25%;
+    min-width: 240px;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden; 
+}
+
+.small-card img {
+    width: 100%;
+    height: 68%;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    display: block;
+}
+
+.small-card .text-content {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.small-card h5 {
+    font-size: 0.8rem;
+        margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+     margin-left: 1rem;
+}
+
+.small-card p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 0.3rem;
+    text-align: left;
+     margin-left: 1rem;
+}
+
+.small-card h6 {
+    font-size: 0.7rem;
+    color: gray;
+    margin-top: 0.2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.about-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 3rem 0;
+
+}
+
+.about-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.about-content {
+    width: 50%;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.about-content h3 {
+    color: rgb(0, 0, 60);
+    font-size: clamp(1rem, 0.669vw + 0.786rem, 1.7rem);
+    margin-bottom: 1rem;
+}
+
+.about-content h1 {
+
+    font-size: clamp(1.5rem, 1.071vw + 1.143rem, 2.5rem);
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    width: 100%;
+}
+
+.about-content i {
+    margin-right: 1rem;
+}
+
+.about-content h4 {
+    width: 80%;
+    font-size: clamp(0.8rem, 0.478vw + 0.547rem, 1.2rem);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+.about-content p {
+    width: 80%;
+    margin-bottom: 1rem;
+    font-size: clamp(0.8rem, 0.478vw + 0.547rem, 1.2rem);
+    color: grey;
+    border-bottom: 2px solid rgb(189, 189, 189);
+    padding-bottom: 1rem;
+}
+
+.about-design {
+    width: 50%;
+    position: relative;
+}
+
+.filled-hexagon {
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: -0.2rem;
+}
+
+.mini-hexa-1,
+.mini-hexa-2,
+.mini-hexa-3 {
+    width: 6.5rem;
+    height: 6.5rem;
+    background: linear-gradient(to top, rgb(0, 0, 70) 80%, rgb(67, 63, 99));
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    position: absolute;
+}
+
+.mini-hexa-1 {
+    margin-left: 5rem;
+    margin-top: 22rem;
+}
+
+.mini-hexa-2 {
+    margin-left: 5rem;
+    margin-top: 28rem;
+}
+
+.mini-hexa-3 {
+    margin-left: rem;
+    margin-top: 25rem;
+}
+
+
+.main-hexagon {
+    width: 20rem;
+    height: 20rem;
+    background-image: url(/images/block.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    position: absolute;
+    margin-left: 6.6rem;
+    margin-top: 4rem;
+}
+
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.875rem;
+    color: #0b0033;
+    border-radius: 50%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 1.0625rem;
+    padding-right: 0.8125rem;
+    background-color: rgb(226, 221, 221);
+    cursor: pointer;
+}
+
+
+
+
+.mini2-hexa-1,
+.mini2-hexa-2,
+.mini2-hexa-3 {
+    width: 6.5rem;
+    height: 6.5rem;
+    background: linear-gradient(to top, rgb(0, 0, 70) 80%, rgb(67, 63, 99));
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.mini2-hexa-1 {
+    margin-left: 22rem;
+    margin-top: 1.5rem;
+}
+
+.mini2-hexa-2 {
+    margin-left: 27rem;
+    margin-top: -9.5rem;
+}
+
+.mini2-hexa-3 {
+    margin-left: 27rem;
+    margin-top: -0.5rem;
+}
+
+
+
+.newsletter {
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 10%;
+    height: auto;
+    border: 1px solid rgb(0, 0, 70);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+    border: none;
+    transform: translateY(50%);
+    z-index: 1;
+}
+
+.newsletter .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newsletter-content {
+    width: 55%;
+    display: flex;
+    padding-top: 2rem;
+    padding-right: 5%;
+}
+
+.newsletter i {
+    font-size: clamp(2rem, 1.912vw + 0.888rem, 3.5rem);
+    color: rgb(0, 0, 70);
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+}
+
+.newsletter-content h2 {
+    font-size: clamp(1.3rem, 0.478vw + 1.147rem, 1.8rem);
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-content p {
+    font-size: clamp(0.7rem, 0.382vw + 0.578rem, 1.1rem);
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+.newsletter-design {
+    width: 45%;
+    display: flex;
+}
+
+.newsletter-design input {
+    width: 80%;
+    height: 2rem;
+    padding: 0.5rem;
+    color: black;
+    font-size: clamp(0.8rem, 0.357vw + 0.686rem, 1.2rem);
+    border: 1px solid grey;
+    border-right: none;
+    outline: none;
+}
+
+
+.newsletter-design button {
+    background: linear-gradient(to top, rgb(0, 0, 70) 80%, rgb(67, 63, 99));
+    color: white;
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    font-size: clamp(0.8rem, 0.357vw + 0.686rem, 1.2rem);
+    cursor: pointer;
+    border-left: none;
+    height: 2rem;
+    width: 15%;
+
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    padding: 2rem 0;
+    z-index: 2;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    padding-left: 5%;
+    padding-top: 10%;
+    display: flex;
+    gap: 4rem;
+}
+
+
+.foot-1 ul,
+.foot-2 ul,
+.foot-3 ul,
+.foot-4 ul,
+.foot-5 ul {
+    list-style: none;
+}
+
+.foot-1 h4,
+.foot-2 h4,
+.foot-3 h4,
+.foot-4 h4,
+.foot-5 h4,
+.foot-6 h4 {
+    font-size: clamp(1rem, 0.287vw + 0.908rem, 1.3rem);
+    margin-bottom: 0.5rem;
+}
+
+.foot-1 ul li,
+.foot-2 ul li,
+.foot-3 ul li,
+.foot-4 ul li,
+.foot-5 ul li,
+.foot-6 ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.foot-1 ul li a,
+.foot-2 ul li a,
+.foot-3 ul li a,
+.foot-4 ul li a,
+.foot-5 ul li a {
+    text-decoration: none;
+    color: grey;
+    font-size: clamp(0.8rem, 0.287vw + 0.686rem, 1.2rem);
+}
+
+
+
+.foot-6 ul {
+    list-style: none;
+    display: flex;
+    font-size: clamp(1.5rem, 0.669vw + 1.286rem, 2.2rem);
+    gap: 2rem;
+    margin-top: 1rem;
+
+}
+
+.foot-6 ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+.foot-6 img {
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.sub-footer {
+    width: 100%;
+    color: gray;
+    background-color: rgb(211, 211, 211);
+}
+
+.sub-footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sub-footer p {
+    font-size: clamp(0.7rem, 0.382vw + 0.578rem, 1.1rem);
+    padding-top: 1rem;
+}
